@@ -30,6 +30,7 @@ footer {
 
 .card-header {
   height: 5em;
+  
 }
 
 .card-text {
@@ -74,3 +75,6 @@ footer {
   float: left;
 }
  
+body {
+  background-color: rgb(146, 200, 236);
+}
