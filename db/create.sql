@@ -21,7 +21,7 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price) values ('Oreo Original Cookies', '.', '816905633-0', 8.47);
+insert into products (name, description, code, price) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', 8.47);
 
 insert into products (name, description, code, price) values (' Oreo White Cocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.'
 , '077030122-3', 3);
