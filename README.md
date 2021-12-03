@@ -18,7 +18,7 @@ Geef aan met [x] welke onderdelen af zijn
 
 Stap 1: Start 
 - [x] Pas de achtergrondkleur van de shop aan (zie mapje web)
-- [ ] Pas de titel van het eerste product in de shop aan (zie mapje db)
+- [x] Pas de titel van het eerste product in de shop aan (zie mapje db)
 - [ ] Pas de query aan zodat getoonde producten gesorteerd worden op naam (zie mapje api)
 
 Stap 2: Database opzetten 
