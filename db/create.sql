@@ -32,5 +32,3 @@ insert into products (name, description, code, price) values (' Oreo Golden', ' 
 insert into products (name, description, code, price) values ('Oreo Double creme', 'Oreo double stuffed, het unieke zwarte koekje met een dubbel zo dikke vanille cremevulling.', '686928463-6', '1,89');
 
 insert into products (name, description, code, price) values ('Oreo Crunchies original', 'Jouw geliefde Oreo koekjes in een handig bite-size formaat. Deze biscuits zijn de perfecte verhouding tussen een Crispy bite en een zachte, romige vulling.', '492662523-7', '1,59');
-
-insert into products (name, description, code, price) values ('Oreo Double creme', 'Oreo strawberry cheesecake, het unieke zwarte koekje met een heerlijke strawberry cheesecake cremevulling.', '686928463-8', '1,89');
