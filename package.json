@@ -4,7 +4,7 @@
     "better-sqlite3": "^7.4.3",
     "nodemailer": "^6.6.5"
   },
-  "name": "5V-webshop",
+  "name": "5v-webshop",
   "version": "1.0.0",
   "main": "start.sh",
   "scripts": {
