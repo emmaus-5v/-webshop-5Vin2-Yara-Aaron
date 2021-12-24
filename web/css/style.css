@@ -30,6 +30,7 @@ footer {
 
 .card-header {
   height: 5em;
+  
 }
 
 .card-text {
@@ -76,4 +77,4 @@ footer {
  
 body {
   background-color: rgb(157, 216, 240);
-}
+  }
