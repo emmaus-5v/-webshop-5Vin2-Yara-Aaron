@@ -22,9 +22,9 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, inhoud, price) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '16 stuks', '1.89');
+insert into products (name, description, code, price) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '1.89');
 
-insert into products (name, description, code, inhoud, price) values (' Oreo White Chocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.', '077030122-3', '14 stuks','2.25');
+insert into products (name, description, code, price) values (' Oreo White Chocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.', '077030122-3', '2.25');
 
 insert into products (name, description, code, price) values ('Oreo Milk Chocolate', 'Oreo omhuld met een heerlijke laag melkchocolade.', '445924201-X', '2.25');
 
@@ -40,4 +40,4 @@ insert into products (name, description, code, price) values ('Oreo Lemon Cream'
 
 insert into products (name, description, code, price) values ('Oreo Mint', 'Oreo mint, het unieke zwarte koekje met een heerlijke mint cremevulling.', '6868294698-8', '1.49');
 
-insert into products (name, description, code, price) values ('Oreo Doule creme', 'Oreo double stuffed, het unieke zwarte koekje met een dubbel zo dikke vanille cremevulling.', '686928467-6', '1.89');
+insert into products (name, description, code, price) values ('De feestdagen zijn natuurlijk niet compleet zonder Gingerbread Oreo Cookies! Deze kerstkoekjes zijn gevuld met een creme met Crunchy Sugar Crystals en hebben een prachtig design voor de feestdagen.', '686928467-6', '1.89');
