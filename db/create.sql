@@ -54,7 +54,13 @@ insert into allergie (ingredient) values ('Tarwe');
 insert into allergie (ingredient) values ('Glutenbevattende Granen');
 insert into allergie (ingredient) values ('Melk');
 
-insert into product_allergie (product_id, ingredient_id) values(2,3,4,5);
+
+insert into product_allergie (product_id, ingredient_id) values (2,3) 
+
+insert into product_allergie (product_id, ingredient_id) values (2,3)
+insert into product_allergie (product_id, ingredient_id) values (2,4)
+insert into product_allergie (product_id, ingredient_id) values (2,5)
+insert into product_allergie (product_id, ingredient_id) values (3,4,5);
 insert into product_allergie (product_id, ingredient_id) values(2,3,4,5);
 insert into product_allergie (product_id, ingredient_id) values(2,3,4,5);
 insert into product_allergie (product_id, ingredient_id) values(2,3);
