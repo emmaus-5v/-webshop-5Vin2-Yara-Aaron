@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Artikelen <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">Artikelen<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 			<a
@@ -62,6 +62,7 @@
 					<ul class="product-properties">
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
+						<li><span class="propert-allergie">Code:</span><span class="product_allergie"></span></li>
 					</ul>
 					<input class="product_amount" type="number" value="1" min="1">
 					<input class="product_id" type="hidden" name="id" data-json="">
@@ -94,7 +95,7 @@
         // laad producten
         // de functie showProducts wordt aangeroepen als er antwoord van de API is
         var request = new XMLHttpRequest()
-        request.open('GET', '/api/products', true) 
+        request.open('GET', '/api/products', true) 		
         request.onload = showProducts 
         request.send() 
 
