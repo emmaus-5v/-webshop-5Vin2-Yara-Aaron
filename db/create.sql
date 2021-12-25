@@ -2,7 +2,7 @@
 -- create tables
 --
 
-DROP TABLE IF EXISTS products; 
+ DROP TABLE IF EXISTS products; 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
@@ -22,7 +22,7 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price, inhoud) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '1.89', 'bloem');
+insert into products (name, description, code, price) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '1.89');
 
 insert into products (name, description, code, price) values ('Oreo White Chocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.', '077030122-3', '2.25');
 
@@ -42,10 +42,3 @@ insert into products (name, description, code, price) values ('Oreo Mint', 'Oreo
 
 insert into products (name, description, code, price) values ('Oreo Gingerbread', 'De feestdagen zijn natuurlijk niet compleet zonder Gingerbread Oreo Cookies! Deze kerstkoekjes zijn gevuld met een creme met Crunchy Sugar Crystals en hebben een prachtig design voor de feestdagen.', '686928467-6', '1.89');
 
-
-CREATE TABLE inhoud (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255),
-);
-
-insert into inhoud ('bloem')
