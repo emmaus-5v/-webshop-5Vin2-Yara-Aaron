@@ -70,12 +70,17 @@ function getProducts(request, response) {
   const category_id = parseInt(request.query.category)
   let data = []
   if (category_id > 0) {
-    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY name')
+    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY name')    
     data = sqlOpdracht.all(category_id)
-  } else {
+  } else {    
     const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY name')
     data = sqlOpdracht.all()
   }
+
+//SELECT products.naam, smaak.naam, verpakking.vorm
+//FROM verpakking INNER JOIN (smaak INNER JOIN products ON smaak.ID = products.smaak_id) ON verpakking.ID = products.vorm_id;
+
+
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
   console.log('API verstuurt /api/products/')
