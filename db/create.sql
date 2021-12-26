@@ -71,16 +71,16 @@ insert into allergie (ingredient) values ('Glutenbevattende Granen');
 insert into allergie (ingredient) values ('Melk');
 
 -- Basis tabel PRODUCTEN
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '1.89' , 100, 20);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo White Chocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.', '077030122-3', '2.25', 200, 20);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Milk Chocolate', 'Oreo omhuld met een heerlijke laag melkchocolade.', '445924201-X', '2.25', 100, 20);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Golden', ' Oreo golden is een uniek koekje met een heerlijke vanille cremevulling..', '693155505-7', '1.45', 300, 10);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Double creme', 'Oreo double stuffed, het unieke zwarte koekje met een dubbel zo dikke vanille cremevulling.', '686928463-6', '1.89', 200, 20);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Original Cookies', 'Oreo is een uniek koekje met een heerlijke vanille cremevulling', '816905633-0', '1.89' , 300, 20);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo White Chocolate', 'Oreo omhuld met een heerlijke laag witte chocolade.', '077030122-3', '2.25', 300, 20);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Milk Chocolate', 'Oreo omhuld met een heerlijke laag melkchocolade.', '445924201-X', '2.25', 300, 20);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Golden', ' Oreo golden is een uniek koekje met een heerlijke vanille cremevulling..', '693155505-7', '1.45', 200, 10);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Double creme', 'Oreo double stuffed, het unieke zwarte koekje met een dubbel zo dikke vanille cremevulling.', '686928463-6', '1.89', 300, 20);
 insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Crunchies original', 'Jouw geliefde Oreo koekjes in een handig bite-size formaat. Deze biscuits zijn de perfecte verhouding tussen een Crispy bite en een zachte, romige vulling.', '492662523-7', '1.59', 100, 20);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Peanut Butter', 'Je vertrouwde Oreo koekje, met een verrassend lekkere vulling met pindakaassmaak.', '492687524-2','1.39', 200, 30);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Lemon Cream', 'Oreo Lemon Cream, het unieke koekje met een citroen cremevulling.', '696948268-5', '1.29', 100, 30);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Peanut Butter', 'Je vertrouwde Oreo koekje, met een verrassend lekkere vulling met pindakaassmaak.', '492687524-2','1.39', 300, 30);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Lemon Cream', 'Oreo Lemon Cream, het unieke koekje met een citroen cremevulling.', '696948268-5', '1.29', 300, 30);
 insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Mint', 'Oreo mint, het unieke zwarte koekje met een heerlijke mint cremevulling.', '6868294698-8', '1.49', 200, 30);
-insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Gingerbread', 'De feestdagen zijn natuurlijk niet compleet zonder Gingerbread Oreo Cookies! Deze kerstkoekjes zijn gevuld met een creme met Crunchy Sugar Crystals en hebben een prachtig design voor de feestdagen.', '686928467-6', '1.89', 300, 10);
+insert into products (name, description, code, price, verpakking_id, smaak_id) values ('Oreo Gingerbread', 'De feestdagen zijn natuurlijk niet compleet zonder Gingerbread Oreo Cookies! Deze kerstkoekjes zijn gevuld met een creme met Crunchy Sugar Crystals en hebben een prachtig design voor de feestdagen.', '686928467-6', '1.89', 300, 30);
 
 -- Koppeltabel PRODUCT <> ALLERGIE
 insert into product_allergie (product_id, ingredient_id) select products.id, allergie.id FROM products, allergie WHERE products.name = 'Oreo Original Cookies' and allergie.ingredient='Soja';
@@ -114,6 +114,7 @@ insert into product_allergie (product_id, ingredient_id) select products.id, all
 insert into product_allergie (product_id, ingredient_id) select products.id, allergie.id FROM products, allergie WHERE products.name = 'Oreo Mint' and allergie.ingredient='Melk';
 insert into product_allergie (product_id, ingredient_id) select products.id, allergie.id FROM products, allergie WHERE products.name = 'Oreo Gingerbread' and allergie.ingredient='Soja';
 insert into product_allergie (product_id, ingredient_id) select products.id, allergie.id FROM products, allergie WHERE products.name = 'Oreo Gingerbread' and allergie.ingredient='Tarwe';
+
 
 
 
