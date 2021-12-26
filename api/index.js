@@ -75,7 +75,7 @@ function getProducts(request, response) {
     data = sqlOpdracht.all(category_id)
   } else {    
     //const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY name')
-    const sqlOpdracht = db.prepare('SELECT products.*, smaak.taste as smaak, verpakking.vorm as vorm FROM products, smaak, verpakking WHERE products.verpakking_id = verpakking.id and products.smaak_id = smaak.id')
+    const sqlOpdracht = db.prepare('SELECT products.*, smaak.taste as smaak, verpakking.vorm as vorm FROM products, smaak, verpakking WHERE products.verpakking_id = verpakking.id and products.smaak_id = smaak.id ORDER BY name' )
     data = sqlOpdracht.all()
   }
 
